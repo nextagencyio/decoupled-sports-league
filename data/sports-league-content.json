@@ -1,0 +1,582 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Sports league homepage with hero, stats, featured teams, and news",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline (e.g., 'Game On!')"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer description for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key league statistics (teams, players, games, etc.)"
+        },
+        {
+          "id": "featured_teams_title",
+          "label": "Featured Teams Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Section Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA Text",
+          "type": "string"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA Text",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "bundle": "team",
+      "label": "Team",
+      "description": "Sports teams in the league",
+      "body": true,
+      "fields": [
+        {
+          "id": "division",
+          "label": "Division",
+          "type": "term(divisions)[]"
+        },
+        {
+          "id": "coach",
+          "label": "Head Coach",
+          "type": "string"
+        },
+        {
+          "id": "wins",
+          "label": "Wins",
+          "type": "integer"
+        },
+        {
+          "id": "losses",
+          "label": "Losses",
+          "type": "integer"
+        },
+        {
+          "id": "image",
+          "label": "Team Image",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "player",
+      "label": "Player",
+      "description": "Players in the league",
+      "body": true,
+      "fields": [
+        {
+          "id": "team_name",
+          "label": "Team Name",
+          "type": "string"
+        },
+        {
+          "id": "position",
+          "label": "Position",
+          "type": "term(positions)[]"
+        },
+        {
+          "id": "jersey_number",
+          "label": "Jersey Number",
+          "type": "integer"
+        },
+        {
+          "id": "photo",
+          "label": "Photo",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "schedule_entry",
+      "label": "Schedule Entry",
+      "description": "Scheduled games and match results",
+      "body": true,
+      "fields": [
+        {
+          "id": "home_team",
+          "label": "Home Team",
+          "type": "string"
+        },
+        {
+          "id": "away_team",
+          "label": "Away Team",
+          "type": "string"
+        },
+        {
+          "id": "game_date",
+          "label": "Game Date",
+          "type": "datetime"
+        },
+        {
+          "id": "venue",
+          "label": "Venue",
+          "type": "string"
+        },
+        {
+          "id": "score",
+          "label": "Score",
+          "type": "string"
+        },
+        {
+          "id": "image",
+          "label": "Game Image",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "news",
+      "label": "News Article",
+      "description": "League news, recaps, and announcements",
+      "body": true,
+      "fields": [
+        {
+          "id": "image",
+          "label": "Featured Image",
+          "type": "image"
+        },
+        {
+          "id": "category",
+          "label": "Category",
+          "type": "term(news_categories)[]"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, rules, contact, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A key statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic value (e.g., '24', '200+')"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "What the number represents"
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-teams",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "24",
+        "label": "Teams"
+      }
+    },
+    {
+      "id": "stat-players",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "350+",
+        "label": "Active Players"
+      }
+    },
+    {
+      "id": "stat-games",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "180",
+        "label": "Games Per Season"
+      }
+    },
+    {
+      "id": "stat-fans",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "50K+",
+        "label": "Fans"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Welcome to Metro Sports League",
+        "hero_title": "Game On!",
+        "hero_subtitle": "Where Champions Are Made",
+        "hero_description": "<p>Join the excitement of Metro Sports League. Follow your favorite teams, track standings, and never miss a game. Our league brings together the best athletes and most passionate fans in the metro area.</p>",
+        "stats_items": [
+          "@stat-teams",
+          "@stat-players",
+          "@stat-games",
+          "@stat-fans"
+        ],
+        "featured_teams_title": "Featured Teams",
+        "cta_title": "Ready to Join the Action?",
+        "cta_description": "<p>Whether you're a player looking to compete or a fan looking to cheer, there's a place for you in the Metro Sports League.</p>",
+        "cta_primary": "View Schedule",
+        "cta_secondary": "Join a Team"
+      }
+    },
+    {
+      "id": "team-thunderbolts",
+      "type": "node.team",
+      "path": "/teams/metro-thunderbolts",
+      "values": {
+        "title": "Metro Thunderbolts",
+        "body": "<p>The Metro Thunderbolts are the reigning East Division champions. Known for their aggressive offense and solid defensive play, the Thunderbolts have built a dynasty that spans three consecutive division titles.</p><h2>Team History</h2><p>Founded in 2015, the Thunderbolts quickly rose through the ranks to become one of the league's most dominant teams. With a passionate fan base and state-of-the-art home facility, they continue to attract top talent.</p>",
+        "division": ["east"],
+        "coach": "Marcus Rivera",
+        "wins": 18,
+        "losses": 6,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80",
+          "alt": "Metro Thunderbolts"
+        }
+      }
+    },
+    {
+      "id": "team-hawks",
+      "type": "node.team",
+      "path": "/teams/riverside-hawks",
+      "values": {
+        "title": "Riverside Hawks",
+        "body": "<p>The Riverside Hawks bring speed and finesse to every match. With a roster of young, talented players and a coaching staff known for innovative strategies, the Hawks are always a team to watch.</p><h2>Team Philosophy</h2><p>The Hawks pride themselves on developing players from within their academy system. Their commitment to youth development has produced some of the league's brightest stars.</p>",
+        "division": ["west"],
+        "coach": "Sarah Kim",
+        "wins": 15,
+        "losses": 9,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80",
+          "alt": "Riverside Hawks"
+        }
+      }
+    },
+    {
+      "id": "team-wolves",
+      "type": "node.team",
+      "path": "/teams/highland-wolves",
+      "values": {
+        "title": "Highland Wolves",
+        "body": "<p>The Highland Wolves are known for their tenacious defensive style and never-give-up attitude. Playing in front of one of the league's loudest crowds, the Wolves make their home field a fortress.</p><h2>Recent Seasons</h2><p>After a rebuilding period, the Wolves have emerged as serious contenders with key acquisitions and a new tactical approach under Coach Williams.</p>",
+        "division": ["north"],
+        "coach": "Derek Williams",
+        "wins": 14,
+        "losses": 10,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&q=80",
+          "alt": "Highland Wolves"
+        }
+      }
+    },
+    {
+      "id": "team-lions",
+      "type": "node.team",
+      "path": "/teams/central-lions",
+      "values": {
+        "title": "Central Lions",
+        "body": "<p>The Central Lions bring tradition and pride to every game. As one of the founding members of the Metro Sports League, the Lions have a storied history of championship runs and legendary players.</p><h2>Legacy</h2><p>With multiple league titles to their name, the Lions continue to build on their rich heritage while developing the next generation of champions.</p>",
+        "division": ["south"],
+        "coach": "James Patterson",
+        "wins": 16,
+        "losses": 8,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80",
+          "alt": "Central Lions"
+        }
+      }
+    },
+    {
+      "id": "player-martinez",
+      "type": "node.player",
+      "path": "/players/alex-martinez",
+      "values": {
+        "title": "Alex Martinez",
+        "body": "<p>Alex Martinez is a dynamic forward known for his explosive speed and clinical finishing. In his third season with the Thunderbolts, Martinez has become the league's top scorer and a fan favorite.</p><p>Martinez came through the Thunderbolts' youth academy and has represented the national team on multiple occasions.</p>",
+        "team_name": "Metro Thunderbolts",
+        "position": ["forward"],
+        "jersey_number": 10,
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80",
+          "alt": "Alex Martinez"
+        }
+      }
+    },
+    {
+      "id": "player-chen",
+      "type": "node.player",
+      "path": "/players/jordan-chen",
+      "values": {
+        "title": "Jordan Chen",
+        "body": "<p>Jordan Chen is an all-star midfielder who controls the tempo of every game. Known for exceptional vision and passing accuracy, Chen has been named league MVP twice in the past four seasons.</p>",
+        "team_name": "Riverside Hawks",
+        "position": ["midfielder"],
+        "jersey_number": 8,
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1546961342-ea5f71b193f3?w=400&q=80",
+          "alt": "Jordan Chen"
+        }
+      }
+    },
+    {
+      "id": "player-okafor",
+      "type": "node.player",
+      "path": "/players/chioma-okafor",
+      "values": {
+        "title": "Chioma Okafor",
+        "body": "<p>Chioma Okafor is a commanding defender and captain of the Highland Wolves. Her leadership on and off the pitch has transformed the Wolves' defensive record, making them one of the toughest teams to score against.</p>",
+        "team_name": "Highland Wolves",
+        "position": ["defender"],
+        "jersey_number": 4,
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+          "alt": "Chioma Okafor"
+        }
+      }
+    },
+    {
+      "id": "player-rodriguez",
+      "type": "node.player",
+      "path": "/players/maria-rodriguez",
+      "values": {
+        "title": "Maria Rodriguez",
+        "body": "<p>Maria Rodriguez is an elite goalkeeper with cat-like reflexes and outstanding command of the box. She holds the league record for most clean sheets in a single season.</p>",
+        "team_name": "Central Lions",
+        "position": ["goalkeeper"],
+        "jersey_number": 1,
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+          "alt": "Maria Rodriguez"
+        }
+      }
+    },
+    {
+      "id": "player-jackson",
+      "type": "node.player",
+      "path": "/players/devonte-jackson",
+      "values": {
+        "title": "DeVonte Jackson",
+        "body": "<p>DeVonte Jackson is an explosive winger with blistering pace and exceptional dribbling skills. His ability to beat defenders one-on-one makes him one of the most exciting players in the league.</p>",
+        "team_name": "Metro Thunderbolts",
+        "position": ["forward"],
+        "jersey_number": 7,
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+          "alt": "DeVonte Jackson"
+        }
+      }
+    },
+    {
+      "id": "player-thompson",
+      "type": "node.player",
+      "path": "/players/lisa-thompson",
+      "values": {
+        "title": "Lisa Thompson",
+        "body": "<p>Lisa Thompson is a versatile midfielder who can play in multiple positions. Her work rate, tactical intelligence, and ability to score from distance make her invaluable to the Hawks.</p>",
+        "team_name": "Riverside Hawks",
+        "position": ["midfielder"],
+        "jersey_number": 14,
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+          "alt": "Lisa Thompson"
+        }
+      }
+    },
+    {
+      "id": "schedule-1",
+      "type": "node.schedule_entry",
+      "path": "/schedule/thunderbolts-vs-hawks",
+      "values": {
+        "title": "Thunderbolts vs Hawks",
+        "body": "<p>A highly anticipated clash between the top two teams in the league. The Thunderbolts will look to extend their winning streak while the Hawks aim to close the gap in the standings.</p>",
+        "home_team": "Metro Thunderbolts",
+        "away_team": "Riverside Hawks",
+        "game_date": "2026-04-12T19:00:00",
+        "venue": "Metro Arena",
+        "score": "",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800&q=80",
+          "alt": "Thunderbolts vs Hawks"
+        }
+      }
+    },
+    {
+      "id": "schedule-2",
+      "type": "node.schedule_entry",
+      "path": "/schedule/wolves-vs-lions",
+      "values": {
+        "title": "Wolves vs Lions",
+        "body": "<p>A cross-division rivalry game that always delivers drama. Both teams are fighting for playoff position and need a win to stay in contention.</p>",
+        "home_team": "Highland Wolves",
+        "away_team": "Central Lions",
+        "game_date": "2026-04-15T18:30:00",
+        "venue": "Highland Stadium",
+        "score": "",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=800&q=80",
+          "alt": "Wolves vs Lions"
+        }
+      }
+    },
+    {
+      "id": "schedule-3",
+      "type": "node.schedule_entry",
+      "path": "/schedule/hawks-vs-wolves",
+      "values": {
+        "title": "Hawks vs Wolves",
+        "body": "<p>The Hawks travel to face the Wolves in what promises to be a tactical battle. Both coaches are known for their strategic preparation and this matchup will be no different.</p>",
+        "home_team": "Riverside Hawks",
+        "away_team": "Highland Wolves",
+        "game_date": "2026-04-20T15:00:00",
+        "venue": "Riverside Field",
+        "score": "",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&q=80",
+          "alt": "Hawks vs Wolves"
+        }
+      }
+    },
+    {
+      "id": "schedule-4",
+      "type": "node.schedule_entry",
+      "path": "/schedule/lions-vs-thunderbolts",
+      "values": {
+        "title": "Lions vs Thunderbolts",
+        "body": "<p>The Central Lions host the Metro Thunderbolts in a blockbuster matchup. With both teams in top form, this could be a preview of the championship final.</p>",
+        "home_team": "Central Lions",
+        "away_team": "Metro Thunderbolts",
+        "game_date": "2026-04-25T19:30:00",
+        "venue": "Lions Den",
+        "score": "",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800&q=80",
+          "alt": "Lions vs Thunderbolts"
+        }
+      }
+    },
+    {
+      "id": "schedule-5",
+      "type": "node.schedule_entry",
+      "path": "/schedule/thunderbolts-vs-wolves",
+      "values": {
+        "title": "Thunderbolts vs Wolves",
+        "body": "<p>The final regular season game for both teams. Seeding in the playoffs is on the line and both teams will be leaving everything on the field.</p>",
+        "home_team": "Metro Thunderbolts",
+        "away_team": "Highland Wolves",
+        "game_date": "2026-05-01T19:00:00",
+        "venue": "Metro Arena",
+        "score": "",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=800&q=80",
+          "alt": "Thunderbolts vs Wolves"
+        }
+      }
+    },
+    {
+      "id": "news-season-preview",
+      "type": "node.news",
+      "path": "/news/season-preview",
+      "values": {
+        "title": "2026 Season Preview: What to Watch For",
+        "body": "<p>The 2026 Metro Sports League season promises to be the most competitive yet. With several teams making significant roster moves and new coaching hires, the balance of power could shift dramatically.</p><p>The Metro Thunderbolts enter as defending champions but face stiffer competition from an improved Riverside Hawks squad and a resurgent Highland Wolves team.</p><h2>Key Storylines</h2><ul><li>Can the Thunderbolts three-peat?</li><li>Will the Hawks' new signings gel quickly?</li><li>The Wolves' defensive revolution continues</li><li>Central Lions' veteran core makes one more push</li></ul>",
+        "category": ["league-news"],
+        "featured": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80",
+          "alt": "2026 Season Preview"
+        }
+      }
+    },
+    {
+      "id": "news-trade-deadline",
+      "type": "node.news",
+      "path": "/news/trade-deadline-recap",
+      "values": {
+        "title": "Trade Deadline Recap: Major Moves Shake Up the League",
+        "body": "<p>The trade deadline has come and gone, and several teams have made bold moves to position themselves for a championship run. Here's a breakdown of the biggest trades and what they mean for the stretch run.</p><p>The Riverside Hawks made the biggest splash, acquiring veteran midfielder Carlos Santos from the Western Stars in exchange for two future draft picks and a young prospect.</p>",
+        "category": ["transfers"],
+        "featured": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=800&q=80",
+          "alt": "Trade Deadline Recap"
+        }
+      }
+    },
+    {
+      "id": "news-community",
+      "type": "node.news",
+      "path": "/news/community-day-success",
+      "values": {
+        "title": "Community Day Event Draws Record Attendance",
+        "body": "<p>The annual Metro Sports League Community Day was a resounding success, with over 5,000 fans attending the free event at Metro Park. Players from all four division-leading teams participated in meet-and-greets, skills clinics, and charity activities.</p><p>\"Events like these remind us why we play,\" said Thunderbolts captain Alex Martinez. \"The connection between our league and the community is what makes this special.\"</p>",
+        "category": ["community"],
+        "featured": false,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+          "alt": "Community Day Event"
+        }
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Metro Sports League",
+        "body": "<p>Founded in 2010, the Metro Sports League has grown from a small local competition to the premier amateur sports league in the metropolitan area. With 24 teams across four divisions, we provide competitive opportunities for athletes of all skill levels.</p><h2>Our Mission</h2><p>To promote sportsmanship, community engagement, and athletic excellence through organized competitive sports. We believe in the power of sports to bring people together and inspire the next generation of athletes.</p><h2>League Structure</h2><ul><li><strong>East Division</strong> - 6 teams</li><li><strong>West Division</strong> - 6 teams</li><li><strong>North Division</strong> - 6 teams</li><li><strong>South Division</strong> - 6 teams</li></ul><h2>Season Format</h2><p>Each team plays 24 regular season games, followed by a single-elimination playoff tournament featuring the top 8 teams. The championship final is held at Metro Arena in June.</p>"
+      }
+    },
+    {
+      "id": "page-rules",
+      "type": "node.page",
+      "path": "/rules",
+      "values": {
+        "title": "League Rules & Regulations",
+        "body": "<h2>Player Eligibility</h2><p>All players must be at least 18 years of age and reside within the metropolitan area. Players must register with the league office before participating in any official matches.</p><h2>Game Rules</h2><p>All games follow standard rules with league-specific modifications. Games consist of two 45-minute halves with a 15-minute halftime break. A minimum of 11 players per team is required to start a match.</p><h2>Code of Conduct</h2><p>The Metro Sports League is committed to fair play and sportsmanship. All participants, including players, coaches, and fans, are expected to conduct themselves with respect and integrity at all times.</p>"
+      }
+    }
+  ]
+}

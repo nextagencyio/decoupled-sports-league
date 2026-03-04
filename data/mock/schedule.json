@@ -1,0 +1,224 @@
+{
+  "data": {
+    "nodeScheduleEntries": {
+      "__typename": "NodeScheduleEntryConnection",
+      "nodes": [
+        {
+          "__typename": "NodeScheduleEntry",
+          "id": "schedule-1",
+          "title": "Thunderbolts vs Hawks",
+          "path": "/schedule/thunderbolts-vs-hawks",
+          "body": {
+            "processed": "<p>A highly anticipated clash between the top two teams in the league. The Thunderbolts will look to extend their winning streak while the Hawks aim to close the gap in the standings.</p>",
+            "summary": "A highly anticipated clash between the top two teams in the league. The Thunderbolts will look to extend their winning streak while the Hawks aim to close the gap in the standings."
+          },
+          "homeTeam": "Metro Thunderbolts",
+          "awayTeam": "Riverside Hawks",
+          "gameDate": {
+            "timestamp": 1776038400
+          },
+          "venue": "Metro Arena",
+          "score": "",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800&q=80",
+            "alt": "Thunderbolts vs Hawks",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeScheduleEntry",
+          "id": "schedule-2",
+          "title": "Wolves vs Lions",
+          "path": "/schedule/wolves-vs-lions",
+          "body": {
+            "processed": "<p>A cross-division rivalry game that always delivers drama. Both teams are fighting for playoff position and need a win to stay in contention.</p>",
+            "summary": "A cross-division rivalry game that always delivers drama. Both teams are fighting for playoff position and need a win to stay in contention."
+          },
+          "homeTeam": "Highland Wolves",
+          "awayTeam": "Central Lions",
+          "gameDate": {
+            "timestamp": 1776295800
+          },
+          "venue": "Highland Stadium",
+          "score": "",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=800&q=80",
+            "alt": "Wolves vs Lions",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeScheduleEntry",
+          "id": "schedule-3",
+          "title": "Hawks vs Wolves",
+          "path": "/schedule/hawks-vs-wolves",
+          "body": {
+            "processed": "<p>The Hawks travel to face the Wolves in what promises to be a tactical battle. Both coaches are known for their strategic preparation and this matchup will be no different.</p>",
+            "summary": "The Hawks travel to face the Wolves in what promises to be a tactical battle. Both coaches are known for their strategic preparation and this matchup will be no different."
+          },
+          "homeTeam": "Riverside Hawks",
+          "awayTeam": "Highland Wolves",
+          "gameDate": {
+            "timestamp": 1776715200
+          },
+          "venue": "Riverside Field",
+          "score": "",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&q=80",
+            "alt": "Hawks vs Wolves",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeScheduleEntry",
+          "id": "schedule-4",
+          "title": "Lions vs Thunderbolts",
+          "path": "/schedule/lions-vs-thunderbolts",
+          "body": {
+            "processed": "<p>The Central Lions host the Metro Thunderbolts in a blockbuster matchup. With both teams in top form, this could be a preview of the championship final.</p>",
+            "summary": "The Central Lions host the Metro Thunderbolts in a blockbuster matchup. With both teams in top form, this could be a preview of the championship final."
+          },
+          "homeTeam": "Central Lions",
+          "awayTeam": "Metro Thunderbolts",
+          "gameDate": {
+            "timestamp": 1777163400
+          },
+          "venue": "Lions Den",
+          "score": "",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800&q=80",
+            "alt": "Lions vs Thunderbolts",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1459865264687-595d652de67e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1459865264687-595d652de67e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeScheduleEntry",
+          "id": "schedule-5",
+          "title": "Thunderbolts vs Wolves",
+          "path": "/schedule/thunderbolts-vs-wolves",
+          "body": {
+            "processed": "<p>The final regular season game for both teams. Seeding in the playoffs is on the line and both teams will be leaving everything on the field.</p>",
+            "summary": "The final regular season game for both teams. Seeding in the playoffs is on the line and both teams will be leaving everything on the field."
+          },
+          "homeTeam": "Metro Thunderbolts",
+          "awayTeam": "Highland Wolves",
+          "gameDate": {
+            "timestamp": 1777680000
+          },
+          "venue": "Metro Arena",
+          "score": "",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=800&q=80",
+            "alt": "Thunderbolts vs Wolves",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

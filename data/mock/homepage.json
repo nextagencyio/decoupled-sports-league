@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Welcome to Metro Sports League",
+          "path": "/homepage",
+          "heroTitle": "Game On!",
+          "heroSubtitle": "Where Champions Are Made",
+          "heroDescription": {
+            "processed": "<p>Join the excitement of Metro Sports League. Follow your favorite teams, track standings, and never miss a game. Our league brings together the best athletes and most passionate fans in the metro area.</p>",
+            "summary": "Join the excitement of Metro Sports League. Follow your favorite teams, track standings, and never miss a game. Our league brings together the best athletes and most passionate fans in the metro area."
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-teams",
+              "title": "",
+              "number": "24",
+              "label": "Teams"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-players",
+              "title": "",
+              "number": "350+",
+              "label": "Active Players"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-games",
+              "title": "",
+              "number": "180",
+              "label": "Games Per Season"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-fans",
+              "title": "",
+              "number": "50K+",
+              "label": "Fans"
+            }
+          ],
+          "featuredTeamsTitle": "Featured Teams",
+          "ctaTitle": "Ready to Join the Action?",
+          "ctaDescription": {
+            "processed": "<p>Whether you're a player looking to compete or a fan looking to cheer, there's a place for you in the Metro Sports League.</p>",
+            "summary": "Whether you're a player looking to compete or a fan looking to cheer, there's a place for you in the Metro Sports League."
+          },
+          "ctaPrimary": "View Schedule",
+          "ctaSecondary": "Join a Team"
+        }
+      ]
+    }
+  }
+}

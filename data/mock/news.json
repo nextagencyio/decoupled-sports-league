@@ -1,0 +1,138 @@
+{
+  "data": {
+    "nodeNewsItems": {
+      "__typename": "NodeNewsConnection",
+      "nodes": [
+        {
+          "__typename": "NodeNews",
+          "id": "news-season-preview",
+          "title": "2026 Season Preview: What to Watch For",
+          "path": "/news/season-preview",
+          "body": {
+            "processed": "<p>The 2026 Metro Sports League season promises to be the most competitive yet. With several teams making significant roster moves and new coaching hires, the balance of power could shift dramatically.</p><p>The Metro Thunderbolts enter as defending champions but face stiffer competition from an improved Riverside Hawks squad and a resurgent Highland Wolves team.</p><h2>Key Storylines</h2><ul><li>Can the Thunderbolts three-peat?</li><li>Will the Hawks' new signings gel quickly?</li><li>The Wolves' defensive revolution continues</li><li>Central Lions' veteran core makes one more push</li></ul>",
+            "summary": "The 2026 Metro Sports League season promises to be the most competitive yet. With several teams making significant roster moves and new coaching hires, the balance of power could shift dramatically.Th"
+          },
+          "category": [
+            {
+              "id": "league-news",
+              "name": "league-news"
+            }
+          ],
+          "featured": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80",
+            "alt": "2026 Season Preview",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeNews",
+          "id": "news-trade-deadline",
+          "title": "Trade Deadline Recap: Major Moves Shake Up the League",
+          "path": "/news/trade-deadline-recap",
+          "body": {
+            "processed": "<p>The trade deadline has come and gone, and several teams have made bold moves to position themselves for a championship run. Here's a breakdown of the biggest trades and what they mean for the stretch run.</p><p>The Riverside Hawks made the biggest splash, acquiring veteran midfielder Carlos Santos from the Western Stars in exchange for two future draft picks and a young prospect.</p>",
+            "summary": "The trade deadline has come and gone, and several teams have made bold moves to position themselves for a championship run. Here's a breakdown of the biggest trades and what they mean for the stretch "
+          },
+          "category": [
+            {
+              "id": "transfers",
+              "name": "transfers"
+            }
+          ],
+          "featured": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=800&q=80",
+            "alt": "Trade Deadline Recap",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeNews",
+          "id": "news-community",
+          "title": "Community Day Event Draws Record Attendance",
+          "path": "/news/community-day-success",
+          "body": {
+            "processed": "<p>The annual Metro Sports League Community Day was a resounding success, with over 5,000 fans attending the free event at Metro Park. Players from all four division-leading teams participated in meet-and-greets, skills clinics, and charity activities.</p><p>\"Events like these remind us why we play,\" said Thunderbolts captain Alex Martinez. \"The connection between our league and the community is what makes this special.\"</p>",
+            "summary": "The annual Metro Sports League Community Day was a resounding success, with over 5,000 fans attending the free event at Metro Park. Players from all four division-leading teams participated in meet-an"
+          },
+          "category": [
+            {
+              "id": "community",
+              "name": "community"
+            }
+          ],
+          "featured": false,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+            "alt": "Community Day Event",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

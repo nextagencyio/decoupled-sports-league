@@ -1,0 +1,189 @@
+{
+  "data": {
+    "nodeTeams": {
+      "__typename": "NodeTeamConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTeam",
+          "id": "team-thunderbolts",
+          "title": "Metro Thunderbolts",
+          "path": "/teams/metro-thunderbolts",
+          "body": {
+            "processed": "<p>The Metro Thunderbolts are the reigning East Division champions. Known for their aggressive offense and solid defensive play, the Thunderbolts have built a dynasty that spans three consecutive division titles.</p><h2>Team History</h2><p>Founded in 2015, the Thunderbolts quickly rose through the ranks to become one of the league's most dominant teams. With a passionate fan base and state-of-the-art home facility, they continue to attract top talent.</p>",
+            "summary": "The Metro Thunderbolts are the reigning East Division champions. Known for their aggressive offense and solid defensive play, the Thunderbolts have built a dynasty that spans three consecutive divisio"
+          },
+          "division": [
+            {
+              "id": "east",
+              "name": "east"
+            }
+          ],
+          "coach": "Marcus Rivera",
+          "wins": 18,
+          "losses": 6,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80",
+            "alt": "Metro Thunderbolts",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTeam",
+          "id": "team-hawks",
+          "title": "Riverside Hawks",
+          "path": "/teams/riverside-hawks",
+          "body": {
+            "processed": "<p>The Riverside Hawks bring speed and finesse to every match. With a roster of young, talented players and a coaching staff known for innovative strategies, the Hawks are always a team to watch.</p><h2>Team Philosophy</h2><p>The Hawks pride themselves on developing players from within their academy system. Their commitment to youth development has produced some of the league's brightest stars.</p>",
+            "summary": "The Riverside Hawks bring speed and finesse to every match. With a roster of young, talented players and a coaching staff known for innovative strategies, the Hawks are always a team to watch.Team Phi"
+          },
+          "division": [
+            {
+              "id": "west",
+              "name": "west"
+            }
+          ],
+          "coach": "Sarah Kim",
+          "wins": 15,
+          "losses": 9,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80",
+            "alt": "Riverside Hawks",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTeam",
+          "id": "team-wolves",
+          "title": "Highland Wolves",
+          "path": "/teams/highland-wolves",
+          "body": {
+            "processed": "<p>The Highland Wolves are known for their tenacious defensive style and never-give-up attitude. Playing in front of one of the league's loudest crowds, the Wolves make their home field a fortress.</p><h2>Recent Seasons</h2><p>After a rebuilding period, the Wolves have emerged as serious contenders with key acquisitions and a new tactical approach under Coach Williams.</p>",
+            "summary": "The Highland Wolves are known for their tenacious defensive style and never-give-up attitude. Playing in front of one of the league's loudest crowds, the Wolves make their home field a fortress.Recent"
+          },
+          "division": [
+            {
+              "id": "north",
+              "name": "north"
+            }
+          ],
+          "coach": "Derek Williams",
+          "wins": 14,
+          "losses": 10,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&q=80",
+            "alt": "Highland Wolves",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTeam",
+          "id": "team-lions",
+          "title": "Central Lions",
+          "path": "/teams/central-lions",
+          "body": {
+            "processed": "<p>The Central Lions bring tradition and pride to every game. As one of the founding members of the Metro Sports League, the Lions have a storied history of championship runs and legendary players.</p><h2>Legacy</h2><p>With multiple league titles to their name, the Lions continue to build on their rich heritage while developing the next generation of champions.</p>",
+            "summary": "The Central Lions bring tradition and pride to every game. As one of the founding members of the Metro Sports League, the Lions have a storied history of championship runs and legendary players.Legacy"
+          },
+          "division": [
+            {
+              "id": "south",
+              "name": "south"
+            }
+          ],
+          "coach": "James Patterson",
+          "wins": 16,
+          "losses": 8,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80",
+            "alt": "Central Lions",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "data": {
+    "nodePlayers": {
+      "__typename": "NodePlayerConnection",
+      "nodes": [
+        {
+          "__typename": "NodePlayer",
+          "id": "player-martinez",
+          "title": "Alex Martinez",
+          "path": "/players/alex-martinez",
+          "body": {
+            "processed": "<p>Alex Martinez is a dynamic forward known for his explosive speed and clinical finishing. In his third season with the Thunderbolts, Martinez has become the league's top scorer and a fan favorite.</p><p>Martinez came through the Thunderbolts' youth academy and has represented the national team on multiple occasions.</p>",
+            "summary": "Alex Martinez is a dynamic forward known for his explosive speed and clinical finishing. In his third season with the Thunderbolts, Martinez has become the league's top scorer and a fan favorite.Marti"
+          },
+          "teamName": "Metro Thunderbolts",
+          "position": [
+            {
+              "id": "forward",
+              "name": "forward"
+            }
+          ],
+          "jerseyNumber": 10,
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80",
+            "alt": "Alex Martinez",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePlayer",
+          "id": "player-chen",
+          "title": "Jordan Chen",
+          "path": "/players/jordan-chen",
+          "body": {
+            "processed": "<p>Jordan Chen is an all-star midfielder who controls the tempo of every game. Known for exceptional vision and passing accuracy, Chen has been named league MVP twice in the past four seasons.</p>",
+            "summary": "Jordan Chen is an all-star midfielder who controls the tempo of every game. Known for exceptional vision and passing accuracy, Chen has been named league MVP twice in the past four seasons."
+          },
+          "teamName": "Riverside Hawks",
+          "position": [
+            {
+              "id": "midfielder",
+              "name": "midfielder"
+            }
+          ],
+          "jerseyNumber": 8,
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1546961342-ea5f71b193f3?w=400&q=80",
+            "alt": "Jordan Chen",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1546961342-ea5f71b193f3?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1546961342-ea5f71b193f3?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1546961342-ea5f71b193f3?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePlayer",
+          "id": "player-okafor",
+          "title": "Chioma Okafor",
+          "path": "/players/chioma-okafor",
+          "body": {
+            "processed": "<p>Chioma Okafor is a commanding defender and captain of the Highland Wolves. Her leadership on and off the pitch has transformed the Wolves' defensive record, making them one of the toughest teams to score against.</p>",
+            "summary": "Chioma Okafor is a commanding defender and captain of the Highland Wolves. Her leadership on and off the pitch has transformed the Wolves' defensive record, making them one of the toughest teams to sc"
+          },
+          "teamName": "Highland Wolves",
+          "position": [
+            {
+              "id": "defender",
+              "name": "defender"
+            }
+          ],
+          "jerseyNumber": 4,
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Chioma Okafor",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePlayer",
+          "id": "player-rodriguez",
+          "title": "Maria Rodriguez",
+          "path": "/players/maria-rodriguez",
+          "body": {
+            "processed": "<p>Maria Rodriguez is an elite goalkeeper with cat-like reflexes and outstanding command of the box. She holds the league record for most clean sheets in a single season.</p>",
+            "summary": "Maria Rodriguez is an elite goalkeeper with cat-like reflexes and outstanding command of the box. She holds the league record for most clean sheets in a single season."
+          },
+          "teamName": "Central Lions",
+          "position": [
+            {
+              "id": "goalkeeper",
+              "name": "goalkeeper"
+            }
+          ],
+          "jerseyNumber": 1,
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+            "alt": "Maria Rodriguez",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePlayer",
+          "id": "player-jackson",
+          "title": "DeVonte Jackson",
+          "path": "/players/devonte-jackson",
+          "body": {
+            "processed": "<p>DeVonte Jackson is an explosive winger with blistering pace and exceptional dribbling skills. His ability to beat defenders one-on-one makes him one of the most exciting players in the league.</p>",
+            "summary": "DeVonte Jackson is an explosive winger with blistering pace and exceptional dribbling skills. His ability to beat defenders one-on-one makes him one of the most exciting players in the league."
+          },
+          "teamName": "Metro Thunderbolts",
+          "position": [
+            {
+              "id": "forward",
+              "name": "forward"
+            }
+          ],
+          "jerseyNumber": 7,
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "alt": "DeVonte Jackson",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePlayer",
+          "id": "player-thompson",
+          "title": "Lisa Thompson",
+          "path": "/players/lisa-thompson",
+          "body": {
+            "processed": "<p>Lisa Thompson is a versatile midfielder who can play in multiple positions. Her work rate, tactical intelligence, and ability to score from distance make her invaluable to the Hawks.</p>",
+            "summary": "Lisa Thompson is a versatile midfielder who can play in multiple positions. Her work rate, tactical intelligence, and ability to score from distance make her invaluable to the Hawks."
+          },
+          "teamName": "Riverside Hawks",
+          "position": [
+            {
+              "id": "midfielder",
+              "name": "midfielder"
+            }
+          ],
+          "jerseyNumber": 14,
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+            "alt": "Lisa Thompson",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
