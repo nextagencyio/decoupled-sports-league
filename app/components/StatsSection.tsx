@@ -6,15 +6,22 @@ interface StatsSectionProps {
   homepageContent: DrupalHomepage | null | undefined
 }
 
+const defaultStats = [
+  { value: '24', label: 'Teams' },
+  { value: '680+', label: 'Active Players' },
+  { value: '82', label: 'Games Per Season' },
+  { value: '1.2M+', label: 'Fans' },
+]
+
 export default function StatsSection({ homepageContent }: StatsSectionProps) {
   const stats = (homepageContent as any)?.stats || (homepageContent as any)?.statsItems || []
-  if (!stats || stats.length === 0) return null
+  const displayStats = stats.length > 0 ? stats : defaultStats
 
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {stats.map((stat: any, i: number) => (
+          {displayStats.map((stat: any, i: number) => (
             <div key={stat.id || i}>
               <div className="font-display text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-700 to-accent-700 bg-clip-text text-transparent">
                 {stat.value || stat.statValue || stat.number}
