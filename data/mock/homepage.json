@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-teams",
               "title": "",
-              "number": "24",
+              "number": "24", "value": "24",
               "label": "Teams"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-players",
               "title": "",
-              "number": "350+",
+              "number": "350+", "value": "350+",
               "label": "Active Players"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-games",
               "title": "",
-              "number": "180",
+              "number": "180", "value": "180",
               "label": "Games Per Season"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-fans",
               "title": "",
-              "number": "50K+",
+              "number": "50K+", "value": "50K+",
               "label": "Fans"
             }
           ],
