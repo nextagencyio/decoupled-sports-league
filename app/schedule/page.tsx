@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import ScheduleEntryCard from '../components/ScheduleEntryCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Game Schedule | Pacific Athletic League',

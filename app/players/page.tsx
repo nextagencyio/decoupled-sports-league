@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import PlayerCard from '../components/PlayerCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Players | Pacific Athletic League',
