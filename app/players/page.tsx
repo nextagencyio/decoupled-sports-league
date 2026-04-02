@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 async function getPlayers() {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_PLAYERS, { first: 50 })
+    const data = await client.raw(GET_PLAYERS, { first: 50 })
     return data?.nodePlayers?.nodes || []
   } catch (error) { console.error('Error fetching players:', error); return [] }
 }
@@ -43,7 +43,7 @@ export default async function PlayersPage() {
           {items.length === 0 ? (
             <div className="text-center py-12"><h2 className="text-2xl font-semibold text-gray-600 mb-2">No Players Yet</h2><p className="text-gray-500">Players will appear here once content is imported.</p></div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">{items.map((item) => (<PlayerCard key={item.id} item={item} />))}</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">{items.map((item: any) => (<PlayerCard key={item.id} item={item} />))}</div>
           )}
         </div>
       </section>
