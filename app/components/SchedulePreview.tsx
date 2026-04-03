@@ -1,15 +1,11 @@
 'use client'
 
 import Link from 'next/link'
-import { useQuery } from '@apollo/client'
-import { GET_UPCOMING_SCHEDULE } from '@/lib/queries'
 import { DrupalScheduleEntry } from '@/lib/types'
 import { MapPin, ArrowRight, Calendar } from 'lucide-react'
 
-interface UpcomingScheduleData {
-  nodeScheduleEntries: {
-    nodes: DrupalScheduleEntry[]
-  }
+interface SchedulePreviewProps {
+  entries?: DrupalScheduleEntry[]
 }
 
 function formatGameDate(timestamp: number): { month: string; day: string; time: string } {
@@ -21,33 +17,8 @@ function formatGameDate(timestamp: number): { month: string; day: string; time: 
   }
 }
 
-export default function SchedulePreview() {
-  const { data, loading, error } = useQuery<UpcomingScheduleData>(GET_UPCOMING_SCHEDULE)
-
-  const entries = data?.nodeScheduleEntries?.nodes || []
-
-  if (loading) {
-    return (
-      <section className="py-16 md:py-20 bg-gradient-to-r from-accent-900 via-accent-950 to-accent-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-4 uppercase">Upcoming Games</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white/10 rounded-xl p-6 animate-pulse">
-                <div className="h-12 w-12 bg-white/20 rounded mb-4" />
-                <div className="h-6 bg-white/20 rounded w-3/4 mb-2" />
-                <div className="h-4 bg-white/20 rounded w-1/2" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    )
-  }
-
-  if (error || entries.length === 0) return null
+export default function SchedulePreview({ entries }: SchedulePreviewProps) {
+  if (!entries || entries.length === 0) return null
 
   return (
     <section className="py-16 md:py-20 bg-gradient-to-r from-accent-900 via-accent-950 to-accent-900 text-white">

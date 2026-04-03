@@ -88,7 +88,14 @@ export function getClient(): TypedClient {
           query ($path: String!) {
             route(path: $path) {
               ... on RouteInternal {
-                entity { ... on NodePage { __typename id title path body { processed } } }
+                entity {
+                  ... on NodePage { __typename id title path body { processed } }
+                  ... on NodeHomepage { __typename id title path heroTitle heroSubtitle heroDescription { processed } statsItems { ... on ParagraphStatItem { id number label } } featuredTeamsTitle ctaTitle ctaDescription { processed } ctaPrimary ctaSecondary }
+                  ... on NodeTeam { __typename id title path body { processed } division { ... on TermInterface { id name } } coach wins losses image { url alt width height } }
+                  ... on NodePlayer { __typename id title path body { processed } teamName position { ... on TermInterface { id name } } jerseyNumber photo { url alt width height } }
+                  ... on NodeScheduleEntry { __typename id title path body { processed } homeTeam awayTeam gameDate { timestamp } venue score image { url alt width height } }
+                  ... on NodeNews { __typename id title path created { timestamp } body { processed } image { url alt width height } category { ... on TermInterface { id name } } featured }
+                }
               }
             }
           }

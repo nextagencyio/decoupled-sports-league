@@ -11,6 +11,11 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: '**.ddev.site',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: '**.decoupled.website',
         pathname: '/**',
       },

@@ -24,7 +24,7 @@ export interface TypedClient {
   raw<T = any>(query: string, variables?: Record<string, any>): Promise<T>
 }
 
-// Stub factory — uses raw queryByPath with a basic route query
+// Stub factory — uses raw queryByPath with a comprehensive route query
 export function createTypedClient(client: DecoupledClient): TypedClient {
   return {
     async getEntries() { return [] },
@@ -34,7 +34,48 @@ export function createTypedClient(client: DecoupledClient): TypedClient {
         query ($path: String!) {
           route(path: $path) {
             ... on RouteInternal {
-              entity { ... on NodePage { __typename id title path body { processed } } }
+              entity {
+                ... on NodePage { __typename id title path body { processed } }
+                ... on NodeHomepage {
+                  __typename id title path
+                  heroTitle heroSubtitle
+                  heroDescription { processed }
+                  statsItems { ... on ParagraphStatItem { id number label } }
+                  featuredTeamsTitle
+                  ctaTitle ctaDescription { processed } ctaPrimary ctaSecondary
+                }
+                ... on NodeTeam {
+                  __typename id title path
+                  body { processed }
+                  division { ... on TermInterface { id name } }
+                  coach wins losses
+                  image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                }
+                ... on NodePlayer {
+                  __typename id title path
+                  body { processed }
+                  teamName
+                  position { ... on TermInterface { id name } }
+                  jerseyNumber
+                  photo { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                }
+                ... on NodeScheduleEntry {
+                  __typename id title path
+                  body { processed }
+                  homeTeam awayTeam
+                  gameDate { timestamp }
+                  venue score
+                  image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                }
+                ... on NodeNews {
+                  __typename id title path
+                  created { timestamp }
+                  body { processed }
+                  image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                  category { ... on TermInterface { id name } }
+                  featured
+                }
+              }
             }
           }
         }

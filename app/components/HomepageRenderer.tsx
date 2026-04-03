@@ -13,6 +13,8 @@ import { Trophy, Users, Calendar, Medal, MapPin, Star } from 'lucide-react'
 
 interface HomepageRendererProps {
   homepageContent: DrupalHomepage | null | undefined
+  featuredTeams?: any[]
+  upcomingSchedule?: any[]
 }
 
 const experiences = [
@@ -31,7 +33,7 @@ const galleryImages = [
   { src: 'https://images.unsplash.com/photo-1530549387789-4c1017266635?w=600&q=80&fit=crop', alt: 'Team celebration' },
 ]
 
-export default function HomepageRenderer({ homepageContent }: HomepageRendererProps) {
+export default function HomepageRenderer({ homepageContent, featuredTeams, upcomingSchedule }: HomepageRendererProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
@@ -67,11 +69,11 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
       </section>
 
       <ErrorBoundary>
-        <TeamsPreview homepageContent={homepageContent} />
+        <TeamsPreview homepageContent={homepageContent} teams={featuredTeams} />
       </ErrorBoundary>
 
       <ErrorBoundary>
-        <SchedulePreview />
+        <SchedulePreview entries={upcomingSchedule} />
       </ErrorBoundary>
 
       {/* Photo Gallery */}
